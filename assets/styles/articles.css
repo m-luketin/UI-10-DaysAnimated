@@ -1,424 +1,439 @@
-.articles{
-    margin: 25px 0;
-    overflow: hidden;
-    padding-bottom: 50px;
-    border-bottom: 14px solid #30cec2;
+.articles {
+  margin: 25px 0;
+  overflow: hidden;
+  padding-bottom: 50px;
+  border-bottom: 14px solid #30cec2;
+  position: relative;
+}
+.title {
+  padding: 25px;
+}
+.title-image {
+  width: 84%;
+}
+.title-text {
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 15px;
+  color: #1a3b43;
+}
+.a100 {
+  display: none;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+.figcaption--left {
+  width: 210px;
+  position: relative;
+  align-self: center;
+  margin-left: 75px;
+  margin-bottom: 75px;
+}
+.lecturer {
+  position: relative;
+  top: 0;
+  left: -65px;
+  width: 350px;
+  margin: 30px 0;
+}
+.number {
+  position: absolute;
+  top: 0;
+  left: -30%;
+  color: hsla(192, 57%, 12%, 0.126);
+  font-size: 150px;
+  font-family: FuseV;
+  font-weight: 900;
+}
+.figure-title {
+  display: inline-block;
+  font-family: FuseV;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #1a3b43;
+  margin-bottom: 10px;
+}
+.figure-text {
+  color: #1a3b43;
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.workshops {
+  position: relative;
+  top: 0;
+  right: -85px;
+  width: 350px;
+  margin-bottom: 25px;
+}
+.figcaption--right {
+  width: 200px;
+  position: relative;
+  align-self: center;
+  margin-left: -50px;
+  margin-top: 35px;
+}
+.background {
+  display: none;
+}
+.background-section {
+  position: relative;
+  margin: 55px 0;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #1a3b43 93%, white 7%);
+  border: 1px solid rgb(180, 178, 178);
+}
+.panel {
+  width: 360px;
+  margin-left: -70px;
+  margin-top: 15px;
+  margin-bottom: 75px;
+}
+.white-triangle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  border-top: 200px solid white;
+  border-left: 370px solid transparent;
+}
+.number--light {
+  position: absolute;
+  top: -18%;
+  left: -18%;
+  color: hsla(193, 16%, 43%, 0.308);
+  font-size: 125px;
+  font-family: FuseV;
+  font-weight: 900;
+}
+.pit {
+  position: relative;
+  top: 0;
+  right: -85px;
+  width: 350px;
+  margin-bottom: 25px;
+}
+.networking {
+  width: 350px;
+  margin-left: -70px;
+  margin-top: 35px;
+}
+.awards {
+  position: relative;
+  top: 0;
+  right: -85px;
+  width: 350px;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 320px) {
+  .workshops {
+    right: -35px;
+  }
+  .panel {
+    width: 320px;
+    left: -64px;
+  }
+  .white-triangle {
+    border-top: 200px solid white;
+    border-left: 320px solid transparent;
+  }
+  .pit {
+    margin-top: 50px;
+    right: -50px;
+  }
+  .networking {
+    width: 320px;
+    left: -64px;
+  }
+  .awards {
+    width: 320px;
+    right: -64px;
+  }
+  .figcaption--right {
+    margin-left: -15px;
+  }
+  .figcaption--left {
+    margin-left: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .title-image {
+    width: 60%;
+  }
+  .title-text {
+    width: 68%;
+  }
+  .a100 {
+    display: block;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 230px;
+    margin-bottom: 25px;
+  }
+  .container {
+    flex-direction: row;
     position: relative;
-}
-.title{
-    padding: 25px;
-}
-.title-image{
-    width: 84%;
-}
-.title-text{
-    font-family: 'Source Sans Pro';
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    margin: 15px;
-    color: #1a3b43;
-}
-.a100{
-    display: none;
-}
-.container{
-    display: flex;
-    flex-direction: column;
-    z-index: 2;
-}
-.figcaption--left{
-    width: 210px;
-    position: relative;
-    align-self: center;
-    margin-left: 75px;
-    margin-bottom: 75px;
-}
-.lecturer{
+  }
+  .lecturer {
     position: relative;
     top: 0;
     left: -65px;
-    width: 350px;
+    width: 320px;
+    height: 260px;
     margin: 30px 0;
-}
-.number{
-    position: absolute;
-    top: 0;
-    left: -30%;
-    color: hsla(192, 57%, 12%, 0.126);
-    font-size: 150px;
-    font-family: FuseV;
-    font-weight: 900;
-}
-.figure-title{
-    display: inline-block;
-    font-family: FuseV;
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 46px;
-    color: #1a3b43;
-    margin-bottom: 10px;
-}
-.figure-text{
-    color: #1a3b43;
-    font-family: 'Source Sans Pro';
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.6;
-}
-.workshops{
-    position: relative;
-    top: 0;
-    right: -85px;
+  }
+  .figcaption--left {
+    margin: 15px;
     width: 350px;
-    margin-bottom: 25px;
-}
-.figcaption--right{
-    width: 200px;
-    position: relative;
+  }
+  .workshops {
+    position: absolute;
+    top: 25px;
+    right: -45px;
+    width: 255px;
+  }
+  .figcaption--right {
     align-self: center;
-    margin-left: -50px;
-    margin-top: 35px;
-}
-.background{
-    display: none;
-}
-.background-section{
+    margin-left: 100px;
+    width: 370px;
+  }
+  .panel {
     position: relative;
-    margin: 55px 0;
+    top: 0;
+    left: -65px;
+    width: 255px;
+    height: 178px;
+    margin: 30px 0;
+    margin-right: 20px;
+  }
+  .white-triangle {
+    display: none;
+  }
+  .pit {
+    right: -45px;
+    width: 320px;
+    height: 220px;
+  }
+  .networking {
+    position: relative;
+    left: -65px;
+    width: 255px;
+    height: 240px;
+    margin: 30px 20px 30px 0;
+  }
+  .background-section {
+    position: relative;
+    margin-bottom: 0;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(180deg,#1a3b43 93%, white 7%);
+    background: linear-gradient(180deg, #1a3b43 96%, white 4%);
+    z-index: -2;
     border: 1px solid rgb(180, 178, 178);
-}
-.panel{
-    width: 360px;
-    margin-left: -70px;
-    margin-top: 15px;
-    margin-bottom: 75px;
-}
-.white-triangle{
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    width: 0;
-    height: 0;
-    border-top: 200px solid white;
-    border-left: 370px solid transparent;
-}
-.number--light{
-    position: absolute;
-    top: -18%;
-    left: -18%;
-    color: hsla(193, 16%, 43%, 0.308);
-    font-size: 125px;
-    font-family: FuseV;
-    font-weight: 900;
-}
-.pit{
+    padding-bottom: 15px;
+  }
+  .margin-fix {
+    margin-top: -30px;
+  }
+  .awards {
     position: relative;
-    top: 0;
-    right: -85px;
-    width: 350px;
-    margin-bottom: 25px;
+    right: -50px;
+    width: 255px;
+    height: 180px;
+    margin-left: 25px;
+  }
+  .bg-c-white {
+    background-color: white;
+    z-index: -1;
+  }
+  .flex-d-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .background {
+    display: block;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    bottom: -15px;
+  }
 }
-.networking{
-    width: 350px;
-    margin-left: -70px;
-    margin-top: 35px;
+@media screen and (min-width: 1024px) {
+  .title-text {
+    width: 500px;
+    font-size: 20px;
+  }
+  .figure-title {
+    font-size: 52px;
+    line-height: 58px;
+  }
+  .figcaption--left:nth-child(1) {
+    margin-left: 60px;
+    margin-top: 200px;
+  }
+  .figure-text {
+    font-size: 20px;
+    width: 365px;
+  }
+  .number {
+    font-size: 172px;
+    top: 25px;
+    left: -60px;
+  }
+  .number--light {
+    font-size: 185px;
+    top: -32px;
+    left: -40px;
+  }
+  .a100 {
+    width: 310px;
+    top: 25px;
+  }
+  .lecturer {
+    width: 500px;
+    height: 410px;
+    left: -120px;
+  }
+  .workshops {
+    width: 400px;
+    right: -75px;
+  }
+  .panel {
+    width: 400px;
+    height: 280px;
+  }
+  .pit {
+    width: 500px;
+    height: 350px;
+    right: -150px;
+  }
+  .networking {
+    width: 400px;
+    height: 375px;
+    margin-top: -45px;
+    margin-right: 40px;
+  }
+  .awards {
+    width: 400px;
+    height: 280px;
+    right: -80px;
+    margin-left: 50px;
+  }
+  .background-section {
+    margin-top: 150px;
+  }
+  .background {
+    bottom: -1px;
+  }
 }
-.awards{
-    position: relative;
-    top: 0;
-    right: -85px;
-    width: 350px;
-    margin-bottom: 25px;
-}
-
-@media screen and (max-width: 320px){
-    .workshops{
-        right: -35px;
-    }
-    .panel{
-        width: 320px;
-        left: -64px;
-    }
-    .white-triangle{
-        border-top: 200px solid white;
-        border-left: 320px solid transparent;
-    }
-    .pit{
-        margin-top: 50px;
-        right: -50px;
-    }
-    .networking{
-        width: 320px;
-        left: -64px;
-    }
-    .awards{
-        width: 320px;
-        right: -64px;
-    }
-    .figcaption--right{
-        margin-left: -15px;
-    }
-    .figcaption--left{
-        margin-left: 15px;
-    }
-}
-
-@media screen and (min-width: 768px){
-    .title-image{
-        width: 60%;
-    }
-    .title-text{
-        width: 68%;
-    }
-    .a100{
-        display: block;
-        position: absolute;
-        top: 80px;
-        right: 0;
-        width: 230px;
-        margin-bottom: 25px;
-    }
-    .container{
-        flex-direction: row;
-        position: relative;
-    }
-    .lecturer{
-        position: relative;
-        top: 0;
-        left: -65px;
-        width: 320px;
-        height: 260px;
-        margin: 30px 0;
-    }
-    .figcaption--left{
-        margin: 15px;
-        width: 350px;
-    }
-    .workshops{
-        position: absolute;
-        top: 25px;
-        right: -45px;
-        width: 255px;
-    }
-    .figcaption--right{
-        align-self: center;
-        margin-left: 100px;
-        width: 370px;
-    }
-    .panel{
-        position: relative;
-        top: 0;
-        left: -65px;
-        width: 255px;
-        height: 178px;
-        margin: 30px 0;
-        margin-right: 20px;
-    }
-    .white-triangle{
-        display: none;
-    }
-    .pit{
-        right: -45px;
-        width: 320px; 
-        height: 220px;
-    }
-    .networking{
-        position: relative;
-        left: -65px;
-        width: 255px;
-        height: 240px;
-        margin: 30px 20px 30px 0;
-    }
-    .background-section{
-        position: relative;
-        margin-bottom: 0;
-        display: flex;
-        flex-direction: column;
-        background: linear-gradient(180deg,#1a3b43 96%, white 4%);
-        z-index: -2;
-        border: 1px solid rgb(180, 178, 178);
-        padding-bottom: 15px
-    }
-    .margin-fix{
-        margin-top: -30px;
-    }
-    .awards{
-        position: relative;
-        right: -50px;
-        width: 255px;
-        height: 180px;
-        margin-left: 25px;
-    }
-    .bg-c-white{
-        background-color: white;
-        z-index: -1;
-    }
-    .flex-d-row-reverse{
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    .background{
-        display: block;
-        position: absolute;
-        width: 100%;
-        z-index: 0;
-        bottom: -15px;
-    }
-}
-@media screen and (min-width: 1024px){
-    .title-text{
-        width: 500px;
-        font-size: 20px;
-    }
-    .figure-title{
-        font-size: 52px;
-        line-height: 58px;
-    }
-    .figcaption--left:nth-child(1){
-        margin-left: 60px;
-        margin-top: 200px;
-    }
-    .figure-text{
-        font-size: 20px;
-        width: 365px;
-    }
-    .number{
-        font-size: 172px;
-        top: 25px;
-        left: -60px
-    }    
-    .number--light{
-        font-size: 185px;
-        top: -32px;
-        left: -40px
-    }   
-    .a100{
-        width: 310px;
-        top: 25px;
-    }
-    .lecturer{
-        width: 500px;
-        height: 410px;
-        left: -120px;
-    }
-    .workshops{
-        width: 400px;
-        right: -75px;
-    }
-    .panel{
-        width:400px;
-        height: 280px;
-    }
-    .pit{
-        width: 500px;
-        height: 350px;
-        right: -150px;
-    }
-    .networking{
-        width: 400px;
-        height: 375px;
-        margin-top: -45px;
-        margin-right: 40px;
-    }
-    .awards{
-        width: 400px;
-        height: 280px;
-        right: -80px;
-        margin-left: 50px;
-    }
-    .background-section{
-        margin-top: 150px;
-    }
-    .background{
-        bottom: -1px;
-    }
-}
-@media screen and (min-width: 1440px){
-    .title{
-        margin-left: 105px;
-    }
-    .title-image{
-        width: 47%;
-    }
-    .title-text{
-        line-height: 33px;
-    }
-    .figure-text{
-        line-height: 33px;
-    }
-    .figure-text{
-        width: 400px;
-    }
-    .figure-title{
-        width: 400px;
-    }
-    .a100{
-        width: 430px;
-        top: 25px;
-    }
-    .lecturer{
-        width: 850px;
-        height: 690px;
-    }
-    .workshops{
-        width: 680px;
-        right: -135px;
-        top: -80px;
-    }
-    .panel{
-        width: 680px;
-        height: 475px;
-        left: -137px;
-    }
-    .margin-fix{
-        margin-top: -135px;
-        margin-bottom: -40px;
-        margin-left: -20px;
-    }
-    .pit{
-        width: 850px;
-        height: 580px;
-        right: -240px;
-    }
-    .networking{
-        width: 680px;
-        height: 650px;
-        left: -130px;
-    }
-    .awards{
-        width: 680px;
-        height: 480px;
-        right: -130px;
-    }
-    .background-section{
-        margin-top: 200px;
-        background: linear-gradient(180deg,#1a3b43 98%, white 1%);
-    }
-    .figcaption--right{
-        margin-left: 170px;
-    }
-    .figcaption--left{
-        margin-top: 250px;
-    }
-    .background{
-        bottom: -3px;
-    }
-    .m-l-100{
-        margin-left: 320px;
-    }
+@media screen and (min-width: 1440px) {
+  .title {
+    margin-left: 105px;
+  }
+  .title-image {
+    width: 47%;
+  }
+  .title-text {
+    line-height: 33px;
+  }
+  .figure-text {
+    line-height: 33px;
+  }
+  .figure-text {
+    width: 400px;
+  }
+  .figure-title {
+    width: 400px;
+  }
+  .a100 {
+    width: 430px;
+    top: 25px;
+  }
+  .lecturer {
+    width: 850px;
+    height: 690px;
+  }
+  .workshops {
+    width: 680px;
+    right: -135px;
+    top: -80px;
+  }
+  .panel {
+    width: 680px;
+    height: 475px;
+    left: -137px;
+  }
+  .margin-fix {
+    margin-top: -135px;
+    margin-bottom: -40px;
+    margin-left: -20px;
+  }
+  .pit {
+    width: 850px;
+    height: 580px;
+    right: -240px;
+  }
+  .networking {
+    width: 680px;
+    height: 650px;
+    left: -130px;
+  }
+  .awards {
+    width: 680px;
+    height: 480px;
+    right: -130px;
+  }
+  .background-section {
+    margin-top: 200px;
+    background: linear-gradient(180deg, #1a3b43 98%, white 1%);
+  }
+  .figcaption--right {
+    margin-left: 170px;
+  }
+  .figcaption--left {
+    margin-top: 250px;
+  }
+  .background {
+    bottom: -3px;
+  }
+  .m-l-100 {
+    margin-left: 320px;
+  }
 }
 
-.b-bottom{
-    border-bottom: 1px solid white;
+.b-bottom {
+  border-bottom: 1px solid white;
 }
-.c-teal{
-    color: #30cec2;
+.c-teal {
+  color: #30cec2;
 }
-.c-white{
-    color: white;
+.c-white {
+  color: white;
+}
+
+@keyframes title {
+  0% {
+    transform: translate(-700px);
+  }
+  100% {
+    transform: translate(1350px);
+  }
+}
+
+.title-image {
+  animation-name: title;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
 }
