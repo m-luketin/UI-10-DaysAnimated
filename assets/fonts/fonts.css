@@ -1,0 +1,23 @@
+@font-face {
+    font-family: FuseV;
+    font-weight: 400;
+    src: url("FuseV.2Display-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: FuseV;
+    font-weight: 600;
+    src: url("/fonts/FuseV.2Text-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: FuseV;
+    font-weight: 900;
+    src: url("./FuseV.2Display-Black.otf") format("opentype");
+}
+
+@font-face {
+    font-family: FuseV;
+    font-weight: 700;
+    src: url("./FuseV.2Display-Book.otf") format("opentype");
+}

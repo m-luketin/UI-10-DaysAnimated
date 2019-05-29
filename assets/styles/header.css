@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+}
+header{
+    background-image: url(https://days.dump.hr/img/header.a62ee423.jpg);
+    overflow: hidden;
+    padding: 30px 20px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: transparent;
+}
+.header-image{
+    width: 165px;
+    height: 44px;
+}
+.line{
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 8px 0;
+}
+.header-text{
+    color : white;
+    font-family: FuseV;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 40px;
+}
+.header-text--blue{
+    color: #30cec1;
+    text-decoration: none;
+}
+.header-main{
+    margin-top: 300px;
+    margin-bottom: 375px;
+}
+.details{
+    margin-top: 25px;
+    color: white;
+    font-family: FuseV;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    font-weight: 400;
+}
+.header-buttons{
+    display: none;
+}
+@media screen and (min-width: 768px){
+    .header-main{
+        margin-top: 320px;
+    }
+    .header-text{
+        color : white;
+        font-size: 45px;
+        line-height: 55px;
+        padding-left: 65px;
+        padding-right: 50px;
+    }
+    .details{
+        font-size: 28px;
+        padding-left: 65px
+    }
+}
+@media screen and (min-width: 1024px){
+    .menu{
+        display: none;
+    }
+    .header-text{
+        font-size: 65px;
+        line-height: 75px;
+        padding-left: 0;
+    }
+    .details{
+        padding-left: 0;
+    }
+    .header-image{
+        width: 190px;
+        height: 50px;
+        margin-top: -5px;
+    }
+    .header-buttons{
+        display: block;
+    }
+    .header-main{
+        margin-top: 280px;
+        margin-bottom: 400px;
+        margin-left: 30px;
+    }
+    .header-button{
+        margin-right: 25px;
+        color: white;
+        font-family: FuseV;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    .registracija{
+        color: white;
+        display: inline-block;
+        border: 0;
+        padding: 10px 14px;
+        background-color: #30cec1;
+        border-radius: 4px;
+        font-family: FuseV;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    header{
+        white-space: normal;
+        padding-top: 40px;
+    }
+}
+@media screen and (min-width: 1440px){
+    nav{
+        padding: 0 125px;
+        box-sizing: border-box;
+    }
+    .header-main{
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+}
